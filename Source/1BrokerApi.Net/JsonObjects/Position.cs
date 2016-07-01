@@ -17,7 +17,7 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public string Symbol { get; private set; }
 
         [JsonProperty("margin")]
-        public double AmountMargin { get; private set; }
+        public decimal AmountMargin { get; private set; }
 
         [JsonProperty("leverage")]
         public float Leverage { get; private set; }
@@ -29,27 +29,27 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public TradeDirection TradeDirection { get; private set; }
 
         [JsonProperty("entry_price")]
-        public double PriceEntry { get; private set; }
+        public decimal PriceEntry { get; private set; }
 
         [JsonProperty("current_bid")]
-        public double SymbolMarketBid { get; private set; }
+        public decimal SymbolMarketBid { get; private set; }
 
         [JsonProperty("current_ask")]
-        public double SymbolMarketAsk { get; private set; }
+        public decimal SymbolMarketAsk { get; private set; }
 
         [JsonProperty("profit_loss")]
-        public double ProfitOrLossAmount { get; private set; }
+        public decimal ProfitOrLossAmount { get; private set; }
 
         [JsonProperty("profit_loss_percent")]
-        public double ProfitOrLossPercentage { get; private set; }
+        public decimal ProfitOrLossPercentage { get; private set; }
 
         [JsonProperty("market_close")]
         public bool IsClosedWithMarketOrder { get; private set; }
 
         [JsonProperty("stop_loss")]
-        public double? StopLoss { get; private set; }
+        public decimal? StopLoss { get; private set; }
 
         [JsonProperty("take_profit")]
-        public double? TakeProfit { get; private set; }
+        public decimal? TakeProfit { get; private set; }
     }
 }

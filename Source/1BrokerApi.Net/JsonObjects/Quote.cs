@@ -9,12 +9,12 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public string Symbol { get; private set; }
 
         [JsonProperty("bid")]
-        public double MarketBid { get; private set; }
+        public decimal MarketBid { get; private set; }
 
         [JsonProperty("ask")]
-        public double MarketAsk { get; private set; }
+        public decimal MarketAsk { get; private set; }
 
-        public double Spread {
+        public decimal Spread {
             get { return Math.Round(MarketAsk - MarketBid, 8); }
         }
 

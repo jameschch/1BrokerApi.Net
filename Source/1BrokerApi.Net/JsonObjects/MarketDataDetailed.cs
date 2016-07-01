@@ -8,12 +8,12 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public float MaximumLeverage { get; private set; }
 
         [JsonProperty("limit_btc")]
-        public double MaximumMarginAmount { get; private set; }
+        public decimal MaximumMarginAmount { get; private set; }
 
         [JsonProperty("overnight_charge_long_percent")]
-        public double OvernightChargePercentageForLongPositions { get; private set; }
+        public decimal OvernightChargePercentageForLongPositions { get; private set; }
 
         [JsonProperty("overnight_charge_short_percent")]
-        public double OvernightChargePercentageForShortPositions { get; private set; }
+        public decimal OvernightChargePercentageForShortPositions { get; private set; }
     }
 }

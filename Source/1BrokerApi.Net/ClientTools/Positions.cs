@@ -17,7 +17,7 @@ namespace Jojatekok.OneBrokerAPI.ClientTools
             return RestWebClient.Get<IList<Position>>("position/list_open");
         }
 
-        public void EditPosition(ulong id, bool isClosableWithMarketOrder = false, double? stopLoss = null, double? takeProfit = null)
+        public void EditPosition(ulong id, bool isClosableWithMarketOrder = false, decimal? stopLoss = null, decimal? takeProfit = null)
         {
             var postData = new Dictionary<string, object> {
                 { "position_id", id }

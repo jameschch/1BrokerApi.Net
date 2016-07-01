@@ -12,7 +12,7 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public string Symbol { get; private set; }
 
         [JsonProperty("margin")]
-        public double AmountMargin { get; private set; }
+        public decimal AmountMargin { get; private set; }
 
         [JsonProperty("leverage")]
         public float Leverage { get; private set; }
@@ -48,18 +48,18 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public OrderType Type { get; private set; }
 
         [JsonProperty("order_type_parameter")]
-        public double TypeParameter { get; private set; }
+        public decimal TypeParameter { get; private set; }
 
         [JsonProperty("stop_loss")]
-        public double? StopLoss { get; private set; }
+        public decimal? StopLoss { get; private set; }
 
         [JsonProperty("take_profit")]
-        public double? TakeProfit { get; private set; }
+        public decimal? TakeProfit { get; private set; }
 
         [JsonProperty("created")]
         public DateTime TimeCreated { get; private set; }
 
-        public Order(string symbol, double amountMargin, TradeDirection tradeDirection, float leverage, OrderType type, double typeParameter = -1, double? stopLoss = null, double? takeProfit = null)
+        public Order(string symbol, decimal amountMargin, TradeDirection tradeDirection, float leverage, OrderType type, decimal typeParameter = -1, decimal? stopLoss = null, decimal? takeProfit = null)
         {
             Symbol = symbol;
             AmountMargin = amountMargin;

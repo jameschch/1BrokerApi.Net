@@ -15,7 +15,7 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public string Email { get; private set; }
 
         [JsonProperty("deposits_unconfirmed_btc")]
-        public double UnconfirmedDepositsInBitcoins { get; private set; }
+        public decimal UnconfirmedDepositsInBitcoins { get; private set; }
 
         [JsonProperty("registered_since")]
         public DateTime TimeRegistered { get; private set; }
