@@ -9,7 +9,7 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
         public string Username { get; private set; }
 
         [JsonProperty("balance_btc")]
-        public string BalanceInBitcoins { get; private set; }
+        public virtual string BalanceInBitcoins { get; private set; }
 
         [JsonProperty("email")]
         public string Email { get; private set; }

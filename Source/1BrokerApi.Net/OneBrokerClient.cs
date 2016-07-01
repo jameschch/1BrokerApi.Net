@@ -11,7 +11,7 @@ namespace Jojatekok.OneBrokerAPI
         private RestWebClient RestWebClient { get; set; }
 
         /// <summary>Provides information about the account being used.</summary>
-        public ClientTools.IAccount Account { get; private set; }
+        public virtual ClientTools.IAccount Account { get; private set; }
 
         /// <summary>Provides functions to create, edit or cancel orders.</summary>
         public ClientTools.IOrders Orders { get; private set; }
