@@ -14,7 +14,7 @@ namespace Jojatekok.OneBrokerAPI
         public virtual ClientTools.IAccount Account { get; private set; }
 
         /// <summary>Provides functions to create, edit or cancel orders.</summary>
-        public ClientTools.IOrders Orders { get; private set; }
+        public virtual ClientTools.IOrders Orders { get; private set; }
 
         /// <summary>Provides functions to create, edit or close positions.</summary>
         public ClientTools.IPositions Positions { get; private set; }

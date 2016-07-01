@@ -6,7 +6,7 @@ namespace Jojatekok.OneBrokerAPI.JsonObjects
     public class Order
     {
         [JsonProperty("order_id")]
-        public ulong Id { get; private set; }
+        public ulong Id { get; set; }
 
         [JsonProperty("symbol")]
         public string Symbol { get; private set; }
