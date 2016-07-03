@@ -3,7 +3,7 @@ using System;
 
 namespace Jojatekok.OneBrokerAPI
 {
-    class JsonResponse<T>
+    public class JsonResponse<T>
     {
         [JsonProperty("server_time")]
         public DateTime ServerTime { get; private set; }

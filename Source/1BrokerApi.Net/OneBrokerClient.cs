@@ -17,10 +17,10 @@ namespace Jojatekok.OneBrokerAPI
         public virtual ClientTools.IOrders Orders { get; private set; }
 
         /// <summary>Provides functions to create, edit or close positions.</summary>
-        public ClientTools.IPositions Positions { get; private set; }
+        public virtual ClientTools.IPositions Positions { get; private set; }
 
         /// <summary>Provides information about markets.</summary>
-        public ClientTools.IMarkets Markets { get; private set; }
+        public virtual ClientTools.IMarkets Markets { get; private set; }
         
 
         /// <summary>If set, the client will use the proxy specified by this property.</summary>

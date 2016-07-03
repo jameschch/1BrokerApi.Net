@@ -12,7 +12,7 @@ namespace Jojatekok.OneBrokerAPI.ClientTools
             RestWebClient = restWebClient;
         }
 
-        public IList<Position> GetOpenPositions()
+        public virtual IList<Position> GetOpenPositions()
         {
             return RestWebClient.Get<IList<Position>>("position/list_open");
         }
